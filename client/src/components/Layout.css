@@ -1,0 +1,76 @@
+/* загальна обгортка */
+.layout__main {
+  padding: 2rem;
+  background-color: #f0f2f5;
+  min-height: calc(100vh - 70px);
+  /* відняти висоту шапки */
+}
+
+/* Навігаційна шапка */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
+
+.navbar__brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar__links a {
+  margin: 0 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__links a:hover {
+  color: #000;
+}
+
+.navbar__actions .btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn--outline {
+  border: 1px solid #333;
+  color: #333;
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: #f5f5f5;
+}
+
+.btn--primary {
+  background: #ffc107;
+  color: #000;
+  border: none;
+}
+
+.btn--primary:hover {
+  background: #e6ac06;
+}

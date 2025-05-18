@@ -1,0 +1,66 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+.form-card {
+  background: #ffc107;
+  border-radius: 16px;
+  padding: 24px;
+  width: 320px;
+  text-align: center;
+}
+
+.form-card h2 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-card input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: -8px;
+}
+
+.forgot a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #222;
+}
+
+.confirm-btn {
+  margin-top: 120px;
+  padding: 12px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.switch {
+  margin-top: 16px;
+  font-size: 0.85rem;
+}
+
+.switch a {
+  font-weight: bold;
+  text-decoration: underline;
+}

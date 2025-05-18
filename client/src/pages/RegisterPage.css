@@ -1,0 +1,71 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+form {
+  padding-top: 10px;
+}
+
+.form-card {
+  background: #ffc107;
+  border-radius: 16px;
+  padding: 24px;
+  width: 320px;
+  text-align: center;
+}
+
+.form-card h2 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-card input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.terms {
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 8px;
+  margin-bottom: 100px;
+}
+
+.terms a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #222;
+}
+
+.confirm-btn {
+  margin-top: 12px;
+  padding: 12px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.switch {
+  margin-top: 16px;
+  font-size: 0.85rem;
+}
+
+.switch a {
+  font-weight: bold;
+  text-decoration: underline;
+}

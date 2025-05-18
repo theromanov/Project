@@ -1,0 +1,97 @@
+/* ————————————————————————
+   0. Зручні утиліти
+———————————————————————— */
+.page-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+}
+
+/* ————————————————————————
+   1. LoginPage
+———————————————————————— */
+.login-container {
+  max-width: 360px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.login-container label {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.login-container button {
+  width: 100%;
+}
+
+/* ————————————————————————
+   2. Загальні сторінки (Authors, etc.)
+———————————————————————— */
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ————————————————————————
+   3. Таблиці (Publications, Subscriptions, Payments)
+———————————————————————— */
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.table th {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* ————————————————————————
+   4. Дрібні корекції
+———————————————————————— */
+button {
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #005bb5;
+}
