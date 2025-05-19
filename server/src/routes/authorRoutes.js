@@ -1,19 +1,17 @@
-const router = require('express').Router();
-const authorController = require('../controllers/authorController');
+// server/src/routes/authorRoutes.js
+const express = require('express');
+const router = express.Router();
+const ctrl = require('../controllers/authorController');
 
-// Отримати всіх авторів
-router.get('/', authorController.getAll);
-
-// Отримати одного автора за ID
-router.get('/:id', authorController.getById);
-
-// Створити нового автора
-router.post('/', authorController.create);
-
-// Оновити інформацію про автора
-router.put('/:id', authorController.update);
-
-// Видалити автора
-router.delete('/:id', authorController.remove);
+// GET    /api/authors
+router.get('/', ctrl.getAll);
+// GET    /api/authors/:id
+router.get('/:id', ctrl.getById);
+// POST   /api/authors
+router.post('/', ctrl.create);
+// PUT    /api/authors/:id
+router.put('/:id', ctrl.update);
+// DELETE /api/authors/:id
+router.delete('/:id', ctrl.remove);
 
 module.exports = router;

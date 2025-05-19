@@ -1,19 +1,12 @@
-const router = require('express').Router();
-const publicationController = require('../controllers/publicationController');
+// server/src/routes/publicationRoutes.js
+const express = require('express');
+const router = express.Router();
+const ctrl = require('../controllers/publicationController');
 
-// Get all publications
-router.get('/', publicationController.getAll);
-
-// Get one by id
-router.get('/:id', publicationController.getById);
-
-// Create new
-router.post('/', publicationController.create);
-
-// Update by id
-router.put('/:id', publicationController.update);
-
-// Delete by id
-router.delete('/:id', publicationController.remove);
+router.get('/', ctrl.getAll);
+router.get('/:id', ctrl.getById);
+router.post('/', ctrl.create);
+router.put('/:id', ctrl.update);
+router.delete('/:id', ctrl.remove);
 
 module.exports = router;

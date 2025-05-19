@@ -1,15 +1,16 @@
-const db = require('../config/db');
+// приклад: server/src/controllers/authorController.js
+const db = require('../db');
 
 exports.getAll = async (req, res) => {
-  const authors = await db('authors').select('*');
-  res.json(authors);
+  const rows = await db('authors').select('*');
+  res.json(rows);
 };
 
 exports.getById = async (req, res) => {
   const { id } = req.params;
-  const author = await db('authors').where({ id }).first();
-  if (!author) return res.status(404).json({ message: 'Author not found' });
-  res.json(author);
+  const item = await db('authors').where({ id }).first();
+  if (!item) return res.status(404).json({ message: 'Author not found' });
+  res.json(item);
 };
 
 exports.create = async (req, res) => {
